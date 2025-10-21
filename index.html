@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes</title>
+    <style>
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+            padding: 25px; 
+            background-color: #f4f4f4;
+        }
+        h1 { 
+            text-align: center; 
+            color: #333;
+        }
+        .instructions {
+            text-align: center; 
+            font-size: 1.1em; 
+            background: #fffbe6; 
+            border: 1px solid #ffe58f;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+        .gallery {
+            display: grid;
+            /* Ajusta minmax(200px, 1fr) si tus imágenes son más grandes o pequeñas */
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .gallery div {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            background: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            object-fit: cover;
+        }
+        .gallery code {
+            display: block;
+            font-size: 0.85em;
+            color: #555;
+            word-wrap: break-word; /* Asegura que el nombre no se salga */
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Mi Galería de Imágenes</h1>
+
+    <p class="instructions">
+        Para obtener la URL pública, haz clic derecho sobre la imagen que quieras y selecciona 
+        <strong>"Copiar dirección de la imagen"</strong>.
+    </p>
+
+    <div class="gallery">
+        
+        <div>
+            <img src="Imagenes/Romboo_logo.png" alt="logo">
+            <code>Romboo_logo.png</code>
+        </div>
+        
+        <div>
+            <img src="Imagen_Inicial.png" alt="Descripción de la imagen 2">
+            <code>Imagen_Inicial.png</code>
+        </div>
+
+        </div>
+
+</body>
+</html>
